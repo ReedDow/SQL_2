@@ -62,6 +62,40 @@
 --   )
 -- ); 
 
+-- update customer
+-- set fax = null
+-- where fax is not null;
+
+-- update customer
+-- set company = 'Self'
+-- where company is null
+
+-- update customer
+-- set last_name = 'Thompson'
+-- where first_name = 'Julia' and last_name = 'Barnett';
+
+-- update customer
+-- set support_rep_id = 4
+-- where email = 'luisrojas@yahoo.cl';
+
+-- update track 
+-- set composer = 'The darkness around us'
+-- where genre_id =(select genre_id from genre where name = 'Metal')
+-- and composer is null;
+
+-- select count(*), g.name from track t
+-- join genre g on t.genre_id = g.genre_id
+-- group by g.name;
+
+-- select count(*), g.name from track t
+-- join genre g on g.genre_id = t.genre_id
+-- where g.name = 'Pop' and g.name = 'Rock'
+-- group by g.name;
+
+-- select ar.name, count(*) from album al
+-- join artist ar on ar.artist_id = al.artist_id
+-- group by ar.name;
+
 
 
 
