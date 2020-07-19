@@ -198,6 +198,10 @@
 -- select from orders o 
 -- join users u on o.product_id = u.id where u.id = 2;
 
+-- select count(*), o.product_id from users u
+-- join orders o on u.id = o.product_id
+-- group by o.product_id
+
 
 
   
